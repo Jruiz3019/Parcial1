@@ -60,7 +60,7 @@ class TestServiciosEstudiante {
     }
 
     @Test
-    void testEliminarEstudianteCuandoSeElimina() {
+    void testEliminarEstudianteSeElimina() {
         when(estudiantesRegistrados.eliminarEstudiante("12345")).thenReturn(true);
 
         assertTrue(servicioEstudiante.eliminarEstudiante("12345"));
